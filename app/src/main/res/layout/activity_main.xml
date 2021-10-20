@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.calc.fragrancecart.MainActivity">
+
+
+   <!-- <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> -->
+
+    <!--  <androidx.appcompat.widget.Toolbar
+         android:id="@+id/dashboard_toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:titleTextColor="@color/colorWhite"
+         android:elevation="4dp"
+         app:title="الأصــنـاف"/>
+
+ </com.google.android.material.appbar.AppBarLayout> -->
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_view"
+        android:text="Button" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigation"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu"
+        android:background="@color/cardview_shadow_end_color"/>
+
+
+    <include
+        layout="@layout/activity_main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_view" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--  <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff1744</color> -->
+
+    <color name="colorPrimary">#BF007A</color>
+    <color name="colorPrimaryDark">#C6218A</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="design_default_color_on_secondary">#000000</color>
+
+    <color name="fragrance_title">#4c4c4c</color>
+    <color name="line">#D3D3D3</color>
+
+
+    <color name="colorBlack">#1E1E1E</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="fragranceColor">#FFFFFF</color>
+    <color name="colorLine">#D3D3D3</color>
+
+
+    <color name="home">#5DE6D9</color>
+    <color name="call">#F44336</color>
+    <color name="seach">#2196F3</color>
+    <color name="tcolor">#F5F6F8</color>
+
+    <color name="cardview_shadow">#4c4c4c</color>
+
+</resources>

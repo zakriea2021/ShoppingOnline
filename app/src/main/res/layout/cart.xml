@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.calc.fragrancecart.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:id="@+id/priceLayout"
+        android:layout_below="@+id/cart_recycler"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6BE1E4E1"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_weight="6"
+                android:textSize="24sp"
+                android:hint="PRICE"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalPrice" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:text="مجموع قيمة الدفع"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceLayout"
+            android:gravity="center">
+
+        <Button
+            android:id="@+id/button_payment"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/priceLayout"
+            android:background="@color/colorPrimary"
+            android:text="كــاش نـقدا / عملية الدفع"
+            android:onClick="paymentClick"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="1dp"
+            android:layout_centerHorizontal="true" />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/layout"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/listen"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/price_total_textView"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:background="#ea7a66"
+                android:onClick="confirm"
+                android:text="إستماع" />
+
+            <Button
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#3a8fc1"
+                android:layout_below="@+id/price_total_textView"
+                android:layout_toRightOf="@id/listen"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:onClick="call"
+                android:text="إتصال" />
+
+            <Button
+                android:id="@+id/sms"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:layout_below="@+id/price_total_textView"
+                android:layout_weight="1"
+                android:background="#ea7a66"
+                android:onClick="sms"
+                android:text="SMS رسائل" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

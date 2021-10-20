@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHome">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:gravity="center"
+            android:text="You are"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="@dimen/_28sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/start_btn_buyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Buyer" />
+
+
+        <TextView
+            android:id="@+id/tv2_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_btn_buyer"
+            android:text="OR"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:gravity="center"
+            android:textSize="@dimen/_28sdp"/>
+
+
+
+        <Button
+            android:id="@+id/start_btn_Seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="10dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tv2_start"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:text="Seller" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FrameConatiner"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_above="@+id/bottomNavigation"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigation"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu"
+        android:background="@color/cardview_shadow_end_color"/>
+
+</RelativeLayout>
